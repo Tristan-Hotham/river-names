@@ -1,0 +1,843 @@
+{
+ "n_overrides": 22,
+ "n": {
+  "ways": 128210,
+  "watercourses": 32068,
+  "rivers": 4048,
+  "streams": 27153,
+  "canals": 867,
+  "roots": 16
+ },
+ "roots": {
+  "avon": {
+   "label": "Avon",
+   "meaning": "Brittonic *abona, 'river' (Welsh afon)",
+   "certainty": "certain",
+   "note": "Literally 'river'. Some Scottish Avons may instead be Gaelic: those are marked probable.",
+   "rivers": 10,
+   "by_nation": {
+    "England": 6,
+    "Scotland": 4
+   },
+   "names": [
+    "avon"
+   ],
+   "list": [
+    "River Avon (Warwickshire) (Warwickshire)",
+    "River Avon (Bristol) (Somerset)",
+    "River Avon (Salisbury, Hampshire Avon) (Wiltshire)",
+    "River Avon (Devon) (Devon)",
+    "Little Avon River (Gloucestershire) (Gloucestershire)",
+    "Avon Water (Lymington, Hampshire) (Hampshire)",
+    "River Avon (Falkirk) (North Lanarkshire)",
+    "River Avon (Speyside) (Moray)",
+    "Avon Water (Strathaven, Lanarkshire) (South Lanarkshire)",
+    "Avon Burn (Falkirk) (Falkirk)"
+   ]
+  },
+  "isca": {
+   "label": "Esk, Exe, Axe, Usk",
+   "meaning": "Brittonic *isca, usually read as 'water'",
+   "certainty": "probable",
+   "note": "Ekwall derives Esk, Exe, Axe and Usk from one root for water; the Esks of Scotland and Cumbria are counted with them.",
+   "rivers": 16,
+   "by_nation": {
+    "Scotland": 8,
+    "England": 6,
+    "Wales": 2
+   },
+   "names": [
+    "axe",
+    "esk",
+    "exe",
+    "usk",
+    "wysg"
+   ],
+   "list": [
+    "River Exe (Devon)",
+    "River Axe (Dorset and Devon) (Dorset)",
+    "River Usk (Gwent)",
+    "River Axe (Somerset) (Somerset)",
+    "River South Esk (Midlothian) (Midlothian)",
+    "River Esk (Cumbria) (Cumbria)",
+    "River Esk (North Yorkshire) (North Yorkshire)",
+    "River Esk (Border Esk) (Dumfries and Galloway)",
+    "Black Esk (Dumfries and Galloway)",
+    "River North Esk (Midlothian) (Midlothian)",
+    "River Esk (Musselburgh) (East Lothian)",
+    "River North Esk (Angus) (Angus)",
+    "River South Esk (Angus) (Angus)",
+    "Little Axe (Dorset) (Dorset)",
+    "White Esk (Dumfries and Galloway)",
+    "Nant Wysg (Ceredigion) (Dyfed)"
+   ]
+  },
+  "ouse": {
+   "label": "Ouse",
+   "meaning": "a Brittonic or older word for 'water'",
+   "certainty": "probable",
+   "note": "Pre-English; the meaning 'water' is a common but not certain reading.",
+   "rivers": 5,
+   "by_nation": {
+    "England": 5
+   },
+   "names": [
+    "ouse"
+   ],
+   "list": [
+    "River Great Ouse (Bedfordshire)",
+    "River Ouse (Sussex) (East Sussex)",
+    "Little Ouse (Norfolk)",
+    "River Ouse (Yorkshire) (North Yorkshire)",
+    "Black Ouse (Northamptonshire) (Northamptonshire)"
+   ]
+  },
+  "derwent": {
+   "label": "Derwent, Darwen, Darent, Dart",
+   "meaning": "Brittonic *derwā, 'oak': 'river where oaks grow'",
+   "certainty": "certain",
+   "note": "Dart is a shorter form of the same root.",
+   "rivers": 11,
+   "by_nation": {
+    "England": 11
+   },
+   "names": [
+    "darent",
+    "dart",
+    "darwen",
+    "derwent"
+   ],
+   "list": [
+    "River Derwent (Derbyshire) (Derbyshire)",
+    "River Derwent (Yorkshire) (East Riding of Yorkshire)",
+    "River Darent (Kent) (Kent)",
+    "River Dart (Devon) (Devon)",
+    "River Dart (Tiverton) (Devon)",
+    "River Darwen (Lancashire) (Lancashire)",
+    "Little Dart River (Devon)",
+    "River Derwent (Northumberland and Durham) (Northumberland)",
+    "River Derwent (Cumbria) (Cumbria)",
+    "East Dart River (Devon)",
+    "West Dart River (Devon)"
+   ]
+  },
+  "dee": {
+   "label": "Dee",
+   "meaning": "Brittonic *dēwā, 'goddess, holy one'",
+   "certainty": "probable",
+   "note": "The Welsh name Dyfrdwy is 'water of the goddess'.",
+   "rivers": 4,
+   "by_nation": {
+    "Scotland": 2,
+    "Wales": 1,
+    "England": 1
+   },
+   "names": [
+    "dee",
+    "dyfrdwy"
+   ],
+   "list": [
+    "River Dee (Wales and Cheshire) (Clwyd)",
+    "River Dee (Aberdeenshire) (Aberdeenshire)",
+    "River Dee (Galloway) (Dumfries and Galloway)",
+    "River Dee (Dentdale) (Cumbria)"
+   ]
+  },
+  "don": {
+   "label": "Don",
+   "meaning": "perhaps the goddess Dānu, or a word for water",
+   "certainty": "probable",
+   "note": "Pre-English; meaning debated.",
+   "rivers": 5,
+   "by_nation": {
+    "England": 4,
+    "Scotland": 1
+   },
+   "names": [
+    "don"
+   ],
+   "list": [
+    "River Don (Yorkshire) (South Yorkshire)",
+    "River Don (Jarrow) (Tyne and Wear)",
+    "River Don (Aberdeenshire) (Aberdeen City)",
+    "Little Don River (South Yorkshire)",
+    "River Don (Lancashire) (Lancashire)"
+   ]
+  },
+  "tam": {
+   "label": "Thames, Tame, Thame, Teme, Tamar, Team",
+   "meaning": "a pre-English root *tam-, often read as 'dark'",
+   "certainty": "probable",
+   "note": "The grouping is Ekwall's; the meaning 'dark' is debated.",
+   "rivers": 8,
+   "by_nation": {
+    "England": 8
+   },
+   "names": [
+    "tamar",
+    "tame",
+    "team",
+    "teme",
+    "thame",
+    "thames"
+   ],
+   "list": [
+    "River Thames (Oxfordshire)",
+    "River Tame (Midlands) (West Midlands)",
+    "River Teme (Herefordshire)",
+    "River Tamar (Cornwall)",
+    "River Thame (Buckinghamshire)",
+    "River Tame (Greater Manchester) (Greater Manchester)",
+    "River Team (Tyne and Wear)",
+    "River Tame (North Yorkshire) (North Yorkshire)"
+   ]
+  },
+  "calder": {
+   "label": "Calder",
+   "meaning": "Brittonic *caleto-dubron, 'hard (rocky) water'",
+   "certainty": "certain",
+   "note": "",
+   "rivers": 15,
+   "by_nation": {
+    "Scotland": 9,
+    "England": 6
+   },
+   "names": [
+    "calder",
+    "callater"
+   ],
+   "list": [
+    "River Calder (West Yorkshire) (West Yorkshire)",
+    "South Calder Water (North Lanarkshire)",
+    "North Calder Water (North Lanarkshire)",
+    "River Calder (Badenoch) (Highland)",
+    "River Calder (Burnley, Lancashire) (Lancashire)",
+    "River Calder (Garstang, Lancashire) (Lancashire)",
+    "Calder Water (South Lanarkshire) (South Lanarkshire)",
+    "River Calder (Renfrewshire) (North Ayrshire)",
+    "Little Calder River (Lancashire)",
+    "River Calder (Cumbria) (Cumbria)",
+    "West Calder Burn (West Lothian)",
+    "Calder Brook (Lancashire) (Lancashire)",
+    "Allt Calder (Highland)",
+    "Calder Burn (Highland) (Highland)",
+    "Callater Burn (Aberdeenshire)"
+   ]
+  },
+  "leven": {
+   "label": "Leven",
+   "meaning": "Brittonic *lēβn-, 'smooth'",
+   "certainty": "probable",
+   "note": "",
+   "rivers": 5,
+   "by_nation": {
+    "Scotland": 3,
+    "England": 2
+   },
+   "names": [
+    "leven"
+   ],
+   "list": [
+    "River Leven (North Yorkshire) (North Yorkshire)",
+    "River Leven (Fife) (Fife)",
+    "River Leven (Cumbria) (Cumbria)",
+    "River Leven (Dunbartonshire) (West Dunbartonshire)",
+    "River Leven (Lochaber) (Highland)"
+   ]
+  },
+  "alaun": {
+   "label": "Aln, Alne, Allen, Ellen, Alun",
+   "meaning": "a pre-English root *alaun-, meaning uncertain",
+   "certainty": "probable",
+   "note": "Grouped by Ekwall; meaning unknown, perhaps 'wandering' or a divine name.",
+   "rivers": 15,
+   "by_nation": {
+    "England": 9,
+    "Scotland": 3,
+    "Wales": 3
+   },
+   "names": [
+    "allan",
+    "allen",
+    "aln",
+    "alne",
+    "alun",
+    "ellen"
+   ],
+   "list": [
+    "River Alne (Warwickshire) (Warwickshire)",
+    "Allan Water (Strathallan) (Stirling)",
+    "Afon Alun (Glamorgan) (South Glamorgan)",
+    "River Allen (Truro, Cornwall) (Cornwall)",
+    "Afon Alun (Clwyd) (Clwyd)",
+    "Afon Alun (Pembrokeshire) (Dyfed)",
+    "River Ellen (Cumbria)",
+    "River Aln (Northumberland)",
+    "West Allen (Northumberland)",
+    "Allan Water (Tweed) (Scottish Borders)",
+    "River Allen (Dorset) (Dorset)",
+    "East Allen (Northumberland)",
+    "River Allen (Camel, Cornwall) (Cornwall)",
+    "Allan Water (Teviotdale) (Scottish Borders)",
+    "River Allen (Northumberland) (Northumberland)"
+   ]
+  },
+  "frome": {
+   "label": "Frome",
+   "meaning": "Brittonic *frām, 'fair, fine, brisk'",
+   "certainty": "probable",
+   "note": "",
+   "rivers": 6,
+   "by_nation": {
+    "England": 5,
+    "Wales": 1
+   },
+   "names": [
+    "ffraw",
+    "frome"
+   ],
+   "list": [
+    "River Frome (Stroud) (Gloucestershire)",
+    "River Frome (Dorset) (Dorset)",
+    "River Frome (Somerset) (Somerset)",
+    "River Frome (Herefordshire) (Herefordshire)",
+    "River Frome (Bristol) (Gloucestershire)",
+    "Afon Ffraw (Anglesey) (Gwynedd)"
+   ]
+  },
+  "kennet": {
+   "label": "Kennet, Kent",
+   "meaning": "a pre-English root of uncertain meaning (Roman Cunetio)",
+   "certainty": "probable",
+   "note": "",
+   "rivers": 2,
+   "by_nation": {
+    "England": 2
+   },
+   "names": [
+    "kennet",
+    "kent"
+   ],
+   "list": [
+    "River Kennet (Berkshire)",
+    "River Kent (Cumbria) (Cumbria)"
+   ]
+  },
+  "colne": {
+   "label": "Colne, Clun",
+   "meaning": "pre-English, meaning unknown",
+   "certainty": "probable",
+   "note": "",
+   "rivers": 5,
+   "by_nation": {
+    "England": 5
+   },
+   "names": [
+    "clun",
+    "colne"
+   ],
+   "list": [
+    "River Colne (Hertfordshire and London) (Greater London)",
+    "River Colne (Essex) (Essex)",
+    "River Clun (Shropshire)",
+    "River Colne (West Yorkshire) (West Yorkshire)",
+    "Colne Water (Lancashire) (Lancashire)"
+   ]
+  },
+  "wye": {
+   "label": "Wye, Wey",
+   "meaning": "pre-English, meaning unknown",
+   "certainty": "probable",
+   "note": "",
+   "rivers": 5,
+   "by_nation": {
+    "England": 5
+   },
+   "names": [
+    "wey",
+    "wye"
+   ],
+   "list": [
+    "River Wey (Surrey and Hampshire) (Surrey)",
+    "River Wye (Wales and Herefordshire) (Herefordshire)",
+    "River Wye (Buckinghamshire) (Buckinghamshire)",
+    "River Wye (Derbyshire) (Derbyshire)",
+    "River Wey (Dorset) (Dorset)"
+   ]
+  },
+  "trent": {
+   "label": "Trent",
+   "meaning": "Brittonic, often read as 'the trespasser', the river that floods",
+   "certainty": "probable",
+   "note": "",
+   "rivers": 1,
+   "by_nation": {
+    "England": 1
+   },
+   "names": [
+    "trent"
+   ],
+   "list": [
+    "River Trent (Nottinghamshire)"
+   ]
+  },
+  "severn": {
+   "label": "Severn",
+   "meaning": "pre-English (Latin Sabrina, Welsh Hafren), meaning unknown",
+   "certainty": "certain",
+   "note": "",
+   "rivers": 3,
+   "by_nation": {
+    "Wales": 2,
+    "England": 1
+   },
+   "names": [
+    "hafren",
+    "severn"
+   ],
+   "list": [
+    "River Severn (Worcestershire)",
+    "Nant Hafren (Ceredigion) (Dyfed)",
+    "Afon Hafren (Carmarthenshire) (Dyfed)"
+   ]
+  }
+ },
+ "root_rivers": 116,
+ "avon_rivers": 10,
+ "avon_england": 6,
+ "avon_scotland": 4,
+ "esk_rivers": 10,
+ "derwent_rivers": 6,
+ "calder_rivers": 15,
+ "generic_counts": {
+  "brook": 3284,
+  "beck": 2969,
+  "burn": 5792,
+  "bourne": 38,
+  "water": 825,
+  "gill": 1760,
+  "sike": 1136,
+  "dyke": 446,
+  "rhyne": 35,
+  "lode": 13,
+  "fleet": 28,
+  "allt": 4263,
+  "abhainn": 560,
+  "nant": 1480,
+  "afon": 793,
+  "river": 2305,
+  "other": 5474
+ },
+ "generic_by_nation": {
+  "England": {
+   "brook": 3042,
+   "beck": 2961,
+   "burn": 809,
+   "bourne": 38,
+   "water": 209,
+   "gill": 1673,
+   "sike": 880,
+   "dyke": 446,
+   "rhyne": 35,
+   "lode": 13,
+   "fleet": 25,
+   "allt": 0,
+   "abhainn": 0,
+   "nant": 0,
+   "afon": 0,
+   "river": 1384,
+   "other": 3305
+  },
+  "Scotland": {
+   "brook": 0,
+   "beck": 8,
+   "burn": 4715,
+   "bourne": 0,
+   "water": 518,
+   "gill": 87,
+   "sike": 256,
+   "dyke": 0,
+   "rhyne": 0,
+   "lode": 0,
+   "fleet": 3,
+   "allt": 4257,
+   "abhainn": 560,
+   "nant": 0,
+   "afon": 0,
+   "river": 518,
+   "other": 1451
+  },
+  "Wales": {
+   "brook": 238,
+   "beck": 0,
+   "burn": 0,
+   "bourne": 0,
+   "water": 3,
+   "gill": 0,
+   "sike": 0,
+   "dyke": 0,
+   "rhyne": 0,
+   "lode": 0,
+   "fleet": 0,
+   "allt": 6,
+   "abhainn": 0,
+   "nant": 1480,
+   "afon": 793,
+   "river": 124,
+   "other": 580
+  },
+  "Northern Ireland": {
+   "brook": 4,
+   "beck": 0,
+   "burn": 268,
+   "bourne": 0,
+   "water": 95,
+   "gill": 0,
+   "sike": 0,
+   "dyke": 0,
+   "rhyne": 0,
+   "lode": 0,
+   "fleet": 0,
+   "allt": 0,
+   "abhainn": 0,
+   "nant": 0,
+   "afon": 0,
+   "river": 278,
+   "other": 138
+  }
+ },
+ "danelaw": {
+  "east": {
+   "beck": 115,
+   "brook": 26,
+   "beck_pc": 81.56028368794327
+  },
+  "mid": {
+   "beck": 2,
+   "brook": 300,
+   "beck_pc": 0.6622516556291391
+  },
+  "west": {
+   "beck": 0,
+   "brook": 755,
+   "beck_pc": 0.0
+  },
+  "east_counties": [
+   "Lincolnshire",
+   "Nottinghamshire"
+  ],
+  "mid_counties": [
+   "Derbyshire",
+   "Leicestershire"
+  ],
+  "west_counties": [
+   "Cheshire",
+   "Staffordshire",
+   "Shropshire",
+   "Greater Manchester"
+  ],
+  "east_lat": 53.18825,
+  "west_lat": 52.901141499999994
+ },
+ "beck_county": {
+  "Cumbria": 99.90118577075098,
+  "North Yorkshire": 99.36651583710407,
+  "West Yorkshire": 90.41533546325878,
+  "Lincolnshire": 95.95959595959596,
+  "Nottinghamshire": 47.61904761904762,
+  "Derbyshire": 0.0,
+  "Cheshire": 0.0,
+  "Staffordshire": 0.0,
+  "Norfolk": 94.73684210526316,
+  "Lancashire": 27.345844504021446,
+  "Leicestershire": 2.3255813953488373
+ },
+ "beck_bands": [
+  {
+   "lat": 50.5,
+   "beck": 0,
+   "brook": 80,
+   "beck_pc": 0.0
+  },
+  {
+   "lat": 50.75,
+   "beck": 0,
+   "brook": 131,
+   "beck_pc": 0.0
+  },
+  {
+   "lat": 51.0,
+   "beck": 2,
+   "brook": 143,
+   "beck_pc": 1.3793103448275863
+  },
+  {
+   "lat": 51.25,
+   "beck": 1,
+   "brook": 132,
+   "beck_pc": 0.7518796992481203
+  },
+  {
+   "lat": 51.5,
+   "beck": 1,
+   "brook": 193,
+   "beck_pc": 0.5154639175257731
+  },
+  {
+   "lat": 51.75,
+   "beck": 0,
+   "brook": 241,
+   "beck_pc": 0.0
+  },
+  {
+   "lat": 52.0,
+   "beck": 0,
+   "brook": 201,
+   "beck_pc": 0.0
+  },
+  {
+   "lat": 52.25,
+   "beck": 2,
+   "brook": 254,
+   "beck_pc": 0.78125
+  },
+  {
+   "lat": 52.5,
+   "beck": 11,
+   "brook": 277,
+   "beck_pc": 3.8194444444444446
+  },
+  {
+   "lat": 52.75,
+   "beck": 9,
+   "brook": 206,
+   "beck_pc": 4.186046511627907
+  },
+  {
+   "lat": 53.0,
+   "beck": 22,
+   "brook": 253,
+   "beck_pc": 8.0
+  },
+  {
+   "lat": 53.25,
+   "beck": 66,
+   "brook": 247,
+   "beck_pc": 21.08626198083067
+  },
+  {
+   "lat": 53.5,
+   "beck": 55,
+   "brook": 365,
+   "beck_pc": 13.095238095238095
+  },
+  {
+   "lat": 53.75,
+   "beck": 256,
+   "brook": 242,
+   "beck_pc": 51.40562248995984
+  },
+  {
+   "lat": 54.0,
+   "beck": 599,
+   "brook": 59,
+   "beck_pc": 91.03343465045593
+  },
+  {
+   "lat": 54.25,
+   "beck": 685,
+   "brook": 4,
+   "beck_pc": 99.41944847605225
+  },
+  {
+   "lat": 54.5,
+   "beck": 883,
+   "brook": 2,
+   "beck_pc": 99.77401129943503
+  },
+  {
+   "lat": 54.75,
+   "beck": 322,
+   "brook": 0,
+   "beck_pc": 100.0
+  },
+  {
+   "lat": 55.0,
+   "beck": 47,
+   "brook": 0,
+   "beck_pc": 100.0
+  }
+ ],
+ "beck_majority_from": 53.75,
+ "beck_south5": 53.5636488,
+ "brook_north95": 53.743989785,
+ "scotland": {
+  "allt": 4257,
+  "abhainn": 560,
+  "burn": 4715,
+  "water": 518,
+  "gaelic_pc": 47.930348258706466,
+  "gaelic_pc_Highland": 86.15567439096851,
+  "gaelic_pc_Na_h-Eileanan_Siar": 98.8108108108108,
+  "gaelic_pc_Argyll_and_Bute": 68.48484848484848,
+  "gaelic_pc_Scottish_Borders": 0.0,
+  "gaelic_pc_Dumfries_and_Galloway": 0.0,
+  "gaelic_pc_Aberdeenshire": 16.693418940609952
+ },
+ "wales": {
+  "nant": 1480,
+  "afon": 793,
+  "brook": 238,
+  "river": 124,
+  "n": 3224,
+  "welsh_pc": 86.2618595825427
+ },
+ "southern": {
+  "bourne": 38,
+  "rhyne": 35,
+  "lode": 13,
+  "rhyne_somerset": 26,
+  "lode_cambs": 8
+ },
+ "grid": {
+  "squares": 434,
+  "top_counts": {
+   "burn": 116,
+   "brook": 115,
+   "allt": 82,
+   "beck": 43,
+   "nant": 23,
+   "water": 12,
+   "abhainn": 11,
+   "afon": 11,
+   "dyke": 8,
+   "gill": 7,
+   "sike": 3,
+   "rhyne": 2,
+   "lode": 1
+  }
+ },
+ "major": {
+  "n": 60,
+  "pre": 37,
+  "english": 10,
+  "uncertain": 13,
+  "pre_pc": 61.666666666666664,
+  "english_pc": 16.666666666666668,
+  "uncertain_pc": 21.666666666666668,
+  "top20_pre": 15,
+  "english_list": [
+   "Mersey",
+   "Waveney",
+   "Cherwell",
+   "Weaver",
+   "Lark",
+   "Rother",
+   "Arun",
+   "Roding",
+   "Mole",
+   "Otter"
+  ],
+  "top10": [
+   "Thames",
+   "Trent",
+   "Nene",
+   "Ouse",
+   "Avon",
+   "Welland",
+   "Severn",
+   "Derwent",
+   "Ure",
+   "Teme"
+  ],
+  "top10_pre": 9
+ },
+ "towns": {
+  "n": 1184,
+  "english_end": 861,
+  "english_pc": 72.7195945945946
+ },
+ "villages": {
+  "n": 11671,
+  "english_end": 8347,
+  "english_pc": 71.51915002998886
+ },
+ "borrowed": {
+  "n": 123,
+  "rivers": 45,
+  "examples": {
+   "exe": [
+    "Exebridge",
+    "Exeter"
+   ],
+   "avon": [
+    "Avon",
+    "Avonbridge",
+    "Avoncliff",
+    "Avonwick"
+   ],
+   "aln": [
+    "Alnwick"
+   ],
+   "esk": [
+    "Esk Valley",
+    "Eskdale",
+    "Eskdale Green",
+    "Eskdalemuir",
+    "Eskdaleside"
+   ],
+   "colne": [
+    "Colne",
+    "Colne Engaine",
+    "Colney Heath",
+    "Colney Street",
+    "White Colne"
+   ],
+   "calder": [
+    "Calder Bridge",
+    "Calder Grove",
+    "Calder Vale",
+    "Calderbank",
+    "Calderbraes",
+    "Caldercruix"
+   ],
+   "severn": [
+    "Severn Stoke"
+   ],
+   "kennet": [
+    "East Kennett",
+    "West Kennett"
+   ],
+   "dart": [
+    "Dartington",
+    "Dartmeet",
+    "Dartmouth"
+   ],
+   "wear": [
+    "Wearhead"
+   ],
+   "tyne": [
+    "Tynehead",
+    "Tynemouth"
+   ],
+   "eden": [
+    "Edenbridge",
+    "Edenstown"
+   ],
+   "frome": [
+    "Frome",
+    "Frome St Quintin",
+    "Frome Vauchurch",
+    "Fromebridge",
+    "Fromes Hill"
+   ]
+  }
+ },
+ "checks": {
+  "exeter": true,
+  "exmouth": false,
+  "alnwick": true,
+  "axminster": false,
+  "lancaster": false
+ }
+}

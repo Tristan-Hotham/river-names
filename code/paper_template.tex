@@ -1,0 +1,116 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\newfontfamily\headfont{Inter}[UprightFont=*-ExtraBold,BoldFont=*-ExtraBold,Extension=.otf,Path=/usr/share/fonts/opentype/inter/]
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{graphicx,booktabs,float,caption,array,xcolor,longtable}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage[round]{natbib}
+\usepackage{setspace}
+\setstretch{1.05}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\titleformat{\section}{\headfont\Large}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\headfont\large}{\thesubsection}{0.8em}{}
+\captionsetup{font=small,labelfont=bf}
+\urlstyle{same}
+\hypersetup{pdftitle={Avon Means River},pdfauthor={Tristan Hotham}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Avon Means River\par}
+\vspace{0.4em}
+{\large The old roots and everyday words of the river names of the United Kingdom, from OpenStreetMap\par}
+\vspace{1.2em}
+{\large Tristan Hotham\par}
+\vspace{0.3em}
+{\small Independent researcher\\
+ORCID: 0000-0003-4931-9349\\
+DOI: https://doi.org/10.5281/zenodo.24063209\par}
+\vspace{0.8em}
+2026
+\end{center}
+
+\begin{quote}
+\small
+\begin{center}\textbf{Abstract}\end{center}
+River names are among the oldest words in the British landscape. I join {{n.ways|int}} named OpenStreetMap waterway stretches in the United Kingdom into {{n.watercourses|int}} named watercourses, split each name into a generic word (river, afon, allt, burn, beck, brook and others) and a specific name, and match the specific names against sixteen groups of Brittonic or older roots after Ekwall's \textit{English River-Names}, assigning every stretch of the {{root_rivers|int}} rivers in those groups to its river by hand. Of the 60 largest English rivers in the data, {{major.pre|int}} have names generally traced to Brittonic or older sources, {{major.english|int}} have English names (several of them late back-formations from towns) and {{major.uncertain|int}} are debated, while {{towns.english_pc|f1}}\% of English towns have a first word ending in a common English or Norse element. There are {{avon_rivers|int}} Avons, {{esk_rivers|int}} Esks and {{calder_rivers|int}} Calders. The generic words map the old language frontiers: {{wales.welsh_pc|f1}}\% of Welsh streams named with \textit{nant}, \textit{afon}, \textit{brook} or \textit{river} use one of the two Welsh words; Gaelic \textit{allt} and \textit{abhainn} make up {{scotland.gaelic_pc_Highland|f1}}\% of the four main Scottish generics in Highland and none in the Borders; and Old Norse \textit{beck} forms the majority north of about {{beck_majority_from|f2}}\textdegree{}N in England. At similar latitudes, {{danelaw.east.beck_pc|f1}}\% of beck and brook names in Lincolnshire and Nottinghamshire are becks, against {{danelaw.west.beck_pc|f1}}\% in Cheshire, Staffordshire, Shropshire and Greater Manchester; Derbyshire and Leicestershire, also within the Danelaw, have almost none.
+
+\textbf{Keywords:} river names; hydronymy; toponymy; Brittonic; Old Norse; Danelaw; Gaelic; Welsh; OpenStreetMap
+\end{quote}
+
+\section{Introduction}
+It is a commonplace of English place-name study that river names are older than settlement names: the Anglo-Saxons renamed most farms and villages in English but kept many British names for rivers, so that \textit{Avon}, the Brittonic word for a river (Welsh \textit{afon}), became the name of several \citep{ekwall1928,gelling2000,mills2011}. Ekwall's \textit{English River-Names} remains the fullest survey of the names themselves \citep{ekwall1928}. This paper does not re-examine any etymology. It asks what the standard readings look like when applied to every named river and stream in a modern open map: how many rivers share the old roots, how England's largest rivers compare with its towns, and how the everyday generic words (burn, beck, brook, allt, nant) divide the country.
+
+\section{Data}
+\textbf{Waterways.} OpenStreetMap ways tagged \texttt{waterway=river}, \texttt{stream} or \texttt{canal} in the United Kingdom with a name, queried with QLever \citep{bast2017}: {{n.ways|int}} named ways with \texttt{name}, \texttt{name:cy} and \texttt{name:gd} and the first coordinate of each way. \textbf{Places.} OpenStreetMap place nodes (city, town, village, hamlet) in the UK, with county and nation from the ONS boundaries.
+
+\section{Method}
+\textbf{From ways to watercourses.} Ways with the same normalised name and type were joined when their start points chain within 15 km (rivers), 8 km (canals) or 4 km (streams), giving {{n.watercourses|int}} watercourses ({{n.rivers|int}} rivers, {{n.streams|int}} streams, {{n.canals|int}} canals; canals are left out of everything below). Because OpenStreetMap splits one river into pieces with gaps, different tags or a Welsh name, and because two rivers of one name may lie close, every piece of the rivers in the root groups was assigned to its river by hand from its position (\texttt{code/root\_rivers\_by\_hand.csv}).
+
+\textbf{Generic and specific.} Each name was split into a generic (before the name: River, Afon, Allt or Alltan, Abhainn, Nant, Water of, Burn of; after it: Brook, Beck, Burn, Bourne, Water, Gill or Ghyll, Sike or Syke, Dyke or Dike, Rhyne, Lode, Fleet, River; or a one-word name ending in one of these) and a specific name, with leading qualifiers (Great, Little, North, Black and so on) removed for matching.
+
+\textbf{Roots.} Sixteen root groups (Table~\ref{tab:roots}) after \citet{ekwall1928}, with \citet{watts2004} and \citet{mills2011}, are matched to the specific name or the Welsh name tag. Matches were read by eye; {{n_overrides|int}} were removed by hand (for example Kent Water and Kent Ditch, named after the county, and several minor \textit{Allen} and \textit{Ouse} streams named after people or places).
+
+\textbf{Largest rivers and towns.} The 60 largest English rivers are ranked by the spread of their mapped start points (a proxy for length) and each name is classed as Brittonic or older, English (including back-formations), or uncertain after \citet{ekwall1928} and \citet{watts2004} (Table~\ref{tab:major}). English towns and cities are classed by whether their first word ends in a common English or Norse element (\textit{-ton}, \textit{-ham}, \textit{-ley}, \textit{-bury}, \textit{-ford}, \textit{-by}, \textit{-thorpe}, \textit{-wick}, \textit{-field} and others); this is a crude test that counts some older names ending in these letters and misses English names with other endings.
+
+\section{Results}
+\subsection{Rivers and towns}
+{{major.pre|int}} of the 60 largest English rivers ({{major.pre_pc|f1}}\%) have names traced to Brittonic or older sources, {{major.english|int}} ({{major.english_pc|f1}}\%) English names and {{major.uncertain|int}} uncertain ones; {{major.top10_pre|int}} of the largest ten are pre-English (Figure~\ref{fig:major}). Of {{towns.n|int}} English towns and cities, {{towns.english_pc|f1}}\% have a first word with an English or Norse ending, and of {{villages.n|int}} villages {{villages.english_pc|f1}}\%. Within 6 km of {{borrowed.rivers|int}} rivers with old names, {{borrowed.n|int}} towns and villages carry the river's name, such as Exeter, Dartmouth, Alnwick, Tynemouth and Doncaster; a few rivers were instead named after their towns, so the direction must be checked case by case.
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_major.png}
+\caption{The 60 largest English rivers in the data and the origin of their names.}\label{fig:major}\end{figure}
+
+{{TABLE_MAJOR}}
+
+\subsection{The roots}
+Table~\ref{tab:roots} lists the root groups and the number of distinct rivers and streams in each. There are {{avon_rivers|int}} Avons ({{avon_england|int}} in England, {{avon_scotland|int}} in Scotland, where some may be Gaelic rather than Brittonic), {{esk_rivers|int}} Esks, {{derwent_rivers|int}} Derwents, Darwens and Darents, and {{calder_rivers|int}} Calders. In all {{root_rivers|int}} rivers and streams fall in the sixteen groups (Figures~\ref{fig:roots} and \ref{fig:avons}).
+
+{{TABLE_ROOTS}}
+
+\begin{figure}[tbp]\centering\includegraphics[width=0.85\textwidth]{f_roots.png}
+\caption{The courses of the rivers in the sixteen root groups.}\label{fig:roots}\end{figure}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_avons.png}
+\caption{Avon; Esk, Exe, Axe and Usk; Derwent and Dart; and Calder.}\label{fig:avons}\end{figure}
+
+\subsection{The generic words}
+Burn ({{generic_counts.burn|int}}), allt ({{generic_counts.allt|int}}), brook ({{generic_counts.brook|int}}), beck ({{generic_counts.beck|int}}), gill ({{generic_counts.gill|int}}), nant ({{generic_counts.nant|int}}), sike ({{generic_counts.sike|int}}), water ({{generic_counts.water|int}}) and afon ({{generic_counts.afon|int}}) are the commonest generics (Figure~\ref{fig:generics}). In Wales \citep{owen2007} {{wales.welsh_pc|f1}}\% of streams named with \textit{nant}, \textit{afon}, \textit{brook} or \textit{river} are \textit{nant} or \textit{afon}. In Scotland \citep{watson1926} Gaelic \textit{allt} and \textit{abhainn} account for {{scotland.gaelic_pc|f1}}\% of the four main generics overall, {{scotland.gaelic_pc_Highland|f1}}\% in Highland, {{scotland.gaelic_pc_Na_h-Eileanan_Siar|f1}}\% in the Western Isles, {{scotland.gaelic_pc_Aberdeenshire|f1}}\% in Aberdeenshire and none in the Scottish Borders or Dumfries and Galloway, where the streams are burns, waters and sikes (the Gaelic past of Galloway shows instead in names in \textit{Pol-}, from Gaelic \textit{poll}, such as Polmaddy Burn). Local words follow local landscapes: {{southern.rhyne_somerset|int}} rhynes in Somerset and {{southern.lode_cambs|int}} lodes in Cambridgeshire.
+
+\begin{figure}[tbp]\centering\includegraphics[width=0.85\textwidth]{f_generics.png}
+\caption{The commonest generic word in each 25 km square (at least five named watercourses).}\label{fig:generics}\end{figure}
+
+\subsection{The beck line}
+Becks outnumber brooks in England north of about {{beck_majority_from|f2}}\textdegree{}N (Figure~\ref{fig:beck}). The 5th percentile of beck latitudes is {{beck_south5|f2}}\textdegree{}N and the 95th percentile of brook latitudes {{brook_north95|f2}}\textdegree{}N, so the change is sharp. It is not only latitude: in Lincolnshire and Nottinghamshire (median place latitude {{danelaw.east_lat|f2}}\textdegree{}N) there are {{danelaw.east.beck|int}} becks to {{danelaw.east.brook|int}} brooks ({{danelaw.east.beck_pc|f1}}\% becks), against {{danelaw.west.beck|int}} becks to {{danelaw.west.brook|int}} brooks in Cheshire, Staffordshire, Shropshire and Greater Manchester ({{danelaw.west_lat|f2}}\textdegree{}N). Lincolnshire ({{beck_county.Lincolnshire|f1}}\%) and Norfolk ({{beck_county.Norfolk|f1}}\%) are almost all beck. Derbyshire and Leicestershire, within the Danelaw of the Five Boroughs, have {{danelaw.mid.beck|int}} becks to {{danelaw.mid.brook|int}} brooks, so the beck tracks dense Norse-speaking settlement rather than the political boundary.
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_beck.png}
+\caption{Beck against brook by latitude in England (left) and in eastern and western counties at similar latitudes (right).}\label{fig:beck}\end{figure}
+
+\section{Limitations}
+The etymologies are the standard ones, applied without re-examining early spellings; several are debated (the meaning of the \textit{Tam-} root and of \textit{*isca}, the Scottish Avons, Stour, Wharfe, the first element of Cherwell) and the origin classes of the 60 largest rivers should be read as a summary of the literature, not a new judgement. OpenStreetMap's naming of small streams is uneven between regions and mappers, and many small streams are unnamed in it; the generic shares describe named streams in the map, not the whole historical record. The size ranking is a proxy: rivers mapped in a few long ways score low, so some long rivers, such as the Eden in Cumbria, fall outside the 60, and the River Tweed counts only for its English stretch. A ranking by true length would change the list at the margin. The town test reads only word endings. The joining of ways into rivers was checked by hand only for the root groups.
+
+\section{Conclusion}
+Mapped from an open gazetteer, Britain's river names show both layers that the place-name literature describes: a scatter of very old names, Avon, Esk, Derwent, Calder, Dee, under an English landscape of towns, and an everyday vocabulary of streams that still follows the old language boundaries, Gaelic in the Highlands, Welsh in Wales, and the Norse beck where Scandinavian settlers were thickest.
+
+\section*{Data and code availability}
+The interactive map is at \url{https://maps.tristanhotham.com/river-names/}. Code, the root rules, the hand assignments and the derived tables are at \url{https://github.com/Tristan-Hotham/river-names} and archived with this paper at https://doi.org/10.5281/zenodo.24063209. The river tables are derived from OpenStreetMap (\copyright{} OpenStreetMap contributors) and released under the Open Database Licence; text and figures CC BY 4.0; code MIT. County boundaries from the ONS (Open Government Licence v3.0).
+
+\section*{AI statement}
+{{AI}}
+
+\begin{thebibliography}{10}
+\bibitem[Bast and Buchhold(2017)]{bast2017} Bast, H. and Buchhold, B. (2017) QLever: a query engine for efficient SPARQL+Text search. \textit{Proceedings of the 2017 ACM Conference on Information and Knowledge Management (CIKM)}, 647 to 656.
+\bibitem[Ekwall(1928)]{ekwall1928} Ekwall, E. (1928) \textit{English River-Names}. Oxford: Clarendon Press.
+\bibitem[Gelling and Cole(2000)]{gelling2000} Gelling, M. and Cole, A. (2000) \textit{The Landscape of Place-Names}. Stamford: Shaun Tyas.
+\bibitem[Mills(2011)]{mills2011} Mills, A. D. (2011) \textit{A Dictionary of British Place-Names}, revised edn. Oxford: Oxford University Press.
+\bibitem[Owen and Morgan(2007)]{owen2007} Owen, H. W. and Morgan, R. (2007) \textit{Dictionary of the Place-Names of Wales}. Llandysul: Gomer.
+\bibitem[Watson(1926)]{watson1926} Watson, W. J. (1926) \textit{The History of the Celtic Place-Names of Scotland}. Edinburgh: Blackwood.
+\bibitem[Watts(2004)]{watts2004} Watts, V. (ed.) (2004) \textit{The Cambridge Dictionary of English Place-Names}. Cambridge: Cambridge University Press.
+\end{thebibliography}
+\end{document}

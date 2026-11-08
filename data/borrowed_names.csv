@@ -1,0 +1,124 @@
+river,spec,root,place,kind,county,nation,osm
+Alne,alne,alaun,Little Alne,hamlet,Warwickshire,England,node/433325618
+Alne,alne,alaun,Great Alne,village,Warwickshire,England,node/433325622
+Black Esk,esk,isca,Eskdalemuir,village,Dumfries and Galloway,Scotland,node/393981179
+Calder Water,calder,calder,Caldermill,village,South Lanarkshire,Scotland,node/242933887
+Colne Water,colne,colne,Colne,town,Lancashire,England,node/26703085
+Darent,darent,derwent,Darenth,village,Kent,England,node/58685756
+Darent,darent,derwent,South Darenth,village,Kent,England,node/58685757
+Dart,dart,derwent,Dartmeet,village,Devon,England,node/29266303
+Dart,dart,derwent,Dartington,village,Devon,England,node/29266164
+Douglas Water,douglas,,Douglas,village,South Lanarkshire,Scotland,node/240780786
+Dove,dove,,Doveridge,village,Derbyshire,England,node/25822066
+East Allen,allen,alaun,Allenheads,village,Northumberland,England,node/55478233
+East Dart River,dart,derwent,Dartmeet,village,Devon,England,node/29266303
+Eden Brook,eden,,Edenbridge,town,Kent,England,node/29368732
+Great Ouse,ouse,ouse,Little Ouse,hamlet,Cambridgeshire,England,node/5375199948
+Kennet,kennet,kennet,West Kennett,hamlet,Wiltshire,England,node/262274415
+Kennet,kennet,kennet,East Kennett,village,Wiltshire,England,node/700339644
+Little Calder River,calder,calder,Calder Vale,hamlet,Lancashire,England,node/29517022
+North Calder Water,calder,calder,Caldercruix,village,North Lanarkshire,Scotland,node/5157476638
+North Calder Water,calder,calder,Calderbraes,village,North Lanarkshire,Scotland,node/244565504
+North Calder Water,calder,calder,Calderbank,village,North Lanarkshire,Scotland,node/99080866
+North Teign,teign,,Teignworthy,hamlet,Devon,England,node/2339465659
+North Teign,teign,,Teigncombe,hamlet,Devon,England,node/2080393987
+River Allen,allen,alaun,Allendale,village,Northumberland,England,node/659967192
+River Aln,aln,alaun,Alnwick,town,Northumberland,England,node/20919015
+River Alne,alne,alaun,Little Alne,hamlet,Warwickshire,England,node/433325618
+River Alne,alne,alaun,Great Alne,village,Warwickshire,England,node/433325622
+River Arrow,arrow,,Arrow,village,Warwickshire,England,node/809314329
+River Avon,avon,avon,Avonwick,village,Devon,England,node/301567998
+River Avon,avon,avon,Avon,hamlet,Wiltshire,England,node/413600880
+River Avon,avon,avon,Avoncliff,hamlet,Wiltshire,England,node/26352939
+River Avon,avon,avon,Avon,hamlet,Hampshire,England,node/29813708
+River Avon,avon,avon,Avonbridge,village,Falkirk,Scotland,node/297517509
+River Brent,brent,,Brentford,town,Greater London,England,node/27365513
+River Calder,calder,calder,Calder Bridge,village,Cumbria,England,node/29539561
+River Calder,calder,calder,Calder Vale,hamlet,Lancashire,England,node/29517022
+River Calder,calder,calder,Calder Grove,village,West Yorkshire,England,node/1228444702
+River Calder,calder,calder,Calderstones,hamlet,Lancashire,England,node/31572642
+River Camel,camel,,Camelford,town,Cornwall,England,node/287252752
+River Clun,clun,colne,Clungunford,village,Shropshire,England,node/1559386100
+River Clun,clun,colne,Clun,town,Shropshire,England,node/29724442
+River Clun,clun,colne,Clunton,village,Shropshire,England,node/29724443
+River Clun,clun,colne,Clunbury,village,Shropshire,England,node/1584147823
+River Colne,colne,colne,Colney Street,hamlet,Hertfordshire,England,node/6341864163
+River Colne,colne,colne,Colney Heath,village,Hertfordshire,England,node/23721835
+River Colne,colne,colne,Colne Engaine,village,Essex,England,node/312365319
+River Colne,colne,colne,White Colne,village,Essex,England,node/316985109
+River Culm,culm,,Culmstock,village,Devon,England,node/12307431757
+River Culm,culm,,Culm Davy,hamlet,Devon,England,node/2512164947
+River Dart,dart,derwent,Dartington,village,Devon,England,node/29266164
+River Dart,dart,derwent,Dartmeet,village,Devon,England,node/29266303
+River Dart,dart,derwent,Dartmouth,town,Devon,England,node/27199086
+River Darwen,darwen,derwent,Darwen,town,Lancashire,England,node/26703042
+River Darwen,darwen,derwent,Lower Darwen,village,Lancashire,England,node/29020180
+River Don,don,don,Doncaster,city,South Yorkshire,England,node/1656443133
+River Dove,dove,,Doveridge,village,Derbyshire,England,node/25822066
+River East Allen,allen,alaun,Allenheads,village,Northumberland,England,node/55478233
+River Eden,eden,,Edenstown,hamlet,Fife,Scotland,node/4200604964
+River Eden,eden,,Edenbridge,town,Kent,England,node/29368732
+River Esk,esk,isca,Eskdale,hamlet,Dumfries and Galloway,Scotland,node/1479264914
+River Esk,esk,isca,Eskdale Green,village,Cumbria,England,node/29541440
+River Esk,esk,isca,Esk Valley,hamlet,North Yorkshire,England,node/1808641554
+River Esk,esk,isca,Eskdaleside,village,North Yorkshire,England,node/5510146810
+River Exe,exe,isca,Exeter,city,Devon,England,node/18009959
+River Exe,exe,isca,Exebridge,village,Somerset,England,node/42397775
+River Fowey,fowey,,Fowey,town,,,node/21554314
+River Frome,frome,frome,Frome,town,Somerset,England,node/30896995
+River Frome,frome,frome,Fromebridge,hamlet,Gloucestershire,England,node/9077137271
+River Frome,frome,frome,Frome St Quintin,village,Dorset,England,node/432990118
+River Frome,frome,frome,Frome Vauchurch,hamlet,Dorset,England,node/3880564436
+River Frome,frome,frome,Fromes Hill,village,Herefordshire,England,node/7229595907
+River Great Ouse,ouse,ouse,Little Ouse,hamlet,Cambridgeshire,England,node/5375199948
+River Kennet,kennet,kennet,West Kennett,hamlet,Wiltshire,England,node/262274415
+River Kennet,kennet,kennet,East Kennett,village,Wiltshire,England,node/700339644
+River Kent,kent,kennet,Kentmere,village,Cumbria,England,node/21093901
+River Kent,kent,kennet,Kents Bank,hamlet,,,node/29672369
+River Leam,leam,,Leamington Hastings,village,Warwickshire,England,node/333285898
+River Leven,leven,leven,Leven,town,,,node/46971338
+River Lugg,lugg,,Lugg Green,hamlet,Herefordshire,England,node/13993829243
+River Nidd,nidd,,Nidd,hamlet,North Yorkshire,England,node/29081977
+River Ouse,ouse,ouse,Little Ouseburn,village,North Yorkshire,England,node/322586596
+River Ouse,ouse,ouse,Great Ouseburn,village,North Yorkshire,England,node/322587155
+River Penk,penk,,Penkridge,town,Staffordshire,England,node/211619
+River Severn,severn,severn,Severn Stoke,village,Worcestershire,England,node/4685690263
+River Taw,taw,,Taw Green,hamlet,Devon,England,node/253907503
+River Taw,taw,,Tawstock,village,Devon,England,node/1613524543
+River Taw,taw,,South Tawton,village,Devon,England,node/303068160
+River Taw,taw,,North Tawton,town,Devon,England,node/303285345
+River Teign,teign,,Teignmouth,town,Devon,England,node/26068358
+River Teign,teign,,Teigngrace,village,Devon,England,node/29264705
+River Teign,teign,,Teignworthy,hamlet,Devon,England,node/2339465659
+River Teign,teign,,Teign Village,village,Devon,England,node/296088829
+River Teign,teign,,Teigncombe,hamlet,Devon,England,node/2080393987
+River Thame,thame,tam,Thame,town,Oxfordshire,England,node/20462034
+River Thames,thames,tam,Thames Ditton,village,Surrey,England,node/2142743531
+River Thames,thames,tam,Thames Haven,hamlet,Essex,England,node/705511432
+River Tone,tone,,Tonedale,village,Somerset,England,node/43654811
+River Tone,tone,,Tone Green,hamlet,Somerset,England,node/9091516649
+River Tweed,tweed,,Tweedsmuir,village,Scottish Borders,Scotland,node/36319005
+River Tweed,tweed,,Tweedhopefoot,hamlet,Scottish Borders,Scotland,node/264387903
+River Tweed,tweed,,Tweedshaws,hamlet,Scottish Borders,Scotland,node/264384435
+River Tweed,tweed,,Tweedmouthmoor,hamlet,Northumberland,England,node/4041876616
+River Tweed,tweed,,Tweedhill,hamlet,Scottish Borders,Scotland,node/2321858886
+River Tweed,tweed,,Tweedmill,hamlet,Scottish Borders,Scotland,node/2329258282
+River Usk,usk,isca,Usk,town,Gwent,Wales,node/29487826
+River Wear,wear,,Wearhead,village,Durham,England,node/27593203
+River West Allen,allen,alaun,Allendale,village,Northumberland,England,node/659967192
+River Wey,wey,wye,Weymouth,town,Dorset,England,node/1594024414
+River Wey,wey,wye,Weybourne,village,Surrey,England,node/297060401
+River Wey,wey,wye,Weybridge,town,Surrey,England,node/1598181905
+River Wheelock,wheelock,,Wheelock,village,Cheshire,England,node/30621884
+River Wheelock,wheelock,,Wheelock Heath,village,Cheshire,England,node/317043761
+River Windrush,windrush,,Windrush,village,Gloucestershire,England,node/278741934
+River Wye,wye,wye,Wyegate Green,hamlet,Gloucestershire,England,node/347414519
+South Calder Water,calder,calder,Calderbank,village,North Lanarkshire,Scotland,node/99080866
+South Teign River,teign,,Teigncombe,hamlet,Devon,England,node/2080393987
+South Teign River,teign,,Teignworthy,hamlet,Devon,England,node/2339465659
+Tyne,tyne,,Tynemouth,town,Tyne and Wear,England,node/27159423
+Tyne Water,tyne,,Tynehead,hamlet,Midlothian,Scotland,node/366938895
+West Allen,allen,alaun,Allenheads,village,Northumberland,England,node/55478233
+West Allen,allen,alaun,Allendale,village,Northumberland,England,node/659967192
+West Dart River,dart,derwent,Dartmeet,village,Devon,England,node/29266303
+Yarrow Water,yarrow,,Yarrow,village,Scottish Borders,Scotland,node/440255199

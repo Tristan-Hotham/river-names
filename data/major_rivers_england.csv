@@ -1,0 +1,61 @@
+rank,river,extent_km,origin,note
+1,thames,183.91919189727804,pre,
+2,trent,106.65508757086448,pre,
+3,nene,106.27491124867625,pre,
+4,ouse,99.60895322945912,pre,
+5,avon,95.15054685935758,pre,
+6,welland,86.37851373389682,uncertain,
+7,severn,76.79361862318706,pre,
+8,derwent,75.20750528992396,pre,
+9,ure,74.60110637022125,pre,
+10,teme,73.35606616355295,pre,
+11,wye,71.56514559489185,pre,
+12,wharfe,68.4996157984593,uncertain,
+13,calder,66.88505313773055,pre,
+14,ribble,65.34611831052185,uncertain,
+15,kennet,63.59412404254677,pre,
+16,tamar,58.39200451742471,pre,
+17,exe,57.58558344831431,pre,
+18,stour,55.85588888686824,uncertain,
+19,mersey,55.23547414588775,english,"Old English, the boundary river"
+20,taw,52.9350702696277,pre,
+21,aire,52.25431503704184,pre,
+22,yare,52.0566390824294,pre,
+23,lune,51.041716512835,pre,
+24,waveney,50.97733999576609,english,"Old English, river by a quaking fen"
+25,don,50.01196840544252,pre,
+26,witham,49.16733833359464,uncertain,
+27,medway,48.81301093757666,pre,
+28,wey,48.69243706252404,pre,
+29,lea,47.9829448979336,pre,
+30,tees,47.31972881164251,pre,
+31,parrett,45.79344595322756,uncertain,
+32,cherwell,45.59650589488448,english,"Old English wella, stream; first element uncertain"
+33,lugg,45.15091820179061,pre,
+34,dove,45.0850568068922,pre,
+35,brue,41.4339645338532,pre,
+36,test,41.42224938736219,uncertain,
+37,soar,40.57866938957186,pre,
+38,colne,38.80837780695327,pre,
+39,weaver,38.563269037442325,english,"Old English, winding river"
+40,lark,37.93829444046498,english,back-formation from Lackford
+41,thame,37.51493738991975,pre,
+42,rother,37.18106698866508,english,back-formation from Rotherfield (the eastern Rother; the western Rother is from Rotherbridge)
+43,swale,36.98960125252233,uncertain,
+44,frome,36.93078916054328,pre,
+45,bure,36.730714911842455,uncertain,
+46,tweed,36.54940866052699,pre,
+47,wissey,35.571773083163976,uncertain,
+48,tern,35.197919000216004,uncertain,
+49,tame,34.939137434895535,pre,
+50,torridge,34.52015807108369,uncertain,
+51,dane,34.46308857630508,uncertain,
+52,arun,34.31475461868784,english,back-formation from Arundel
+53,tyne,33.6364206492156,pre,
+54,roding,33.3090328088188,english,"from the Roding villages, Old English folk name"
+55,wear,32.93708680226263,pre,
+56,windrush,32.845289330531564,pre,
+57,mole,32.82317117811672,english,back-formation from Molesey
+58,tone,32.822107811555206,pre,
+59,otter,32.44523923682115,english,"Old English otor, otter"
+60,kent,31.808154706062314,pre,

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Avon means river | The oldest names in the British landscape</title>
+<meta name="description" content="{{n.watercourses|int}} named rivers and streams in the UK mapped by the words in their names: Brittonic Avons, Esks and Derwents under English villages, and the burn, beck, brook, allt and nant of every region.">
+<meta property="og:title" content="Avon means river">
+<meta property="og:description" content="England's villages have English names, but {{major.pre|int}} of its 60 biggest rivers kept names older than English. And the beck line still follows the Vikings.">
+<meta property="og:image" content="https://maps.tristanhotham.com/river-names/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/river-names/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=MedievalSharp&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+{{CSS}}
+</head>
+<body>
+<div class="topbar">
+  <a class="tb-name" href="#mapWrap">Avon means river</a>
+  <span class="tb-k">Data study · 2026</span>
+  <nav class="tb-links"><a href="#essay">About</a><button class="theme" id="theme" aria-label="Toggle dark mode">◐</button><a href="https://doi.org/10.5281/zenodo.24063209">Paper</a><a class="x" href="https://github.com/Tristan-Hotham/river-names">Data and code</a></nav>
+</div>
+
+<div class="mapband">
+  <div class="pane" id="mapWrap" data-fullscreen-map role="application" aria-label="Map of every named river and stream in the United Kingdom, coloured by the words in their names">
+    <div id="map"></div>
+    <div class="nojs" id="nojs">Loading the map. It needs JavaScript and WebGL.</div>
+    <div class="cartouche" id="cartouche">
+      <button class="ct-toggle" id="ctToggle" aria-expanded="true" title="Show the title">Avon means river <span aria-hidden="true">▾</span></button>
+      <button class="ct-fold" id="ctFold" title="Fold the title" aria-label="Fold the title">▴</button>
+      <div class="ct-body">
+        <div class="kicker"><b>Data study</b><span>2026</span></div>
+        <h1><span class="a">Avon</span> means river</h1>
+        <p class="dek">River names are among the oldest words in Britain. {{n.watercourses|int}} named rivers and streams, by the word they use for a stream, or by the ancient root of their name. Tap any dot.</p>
+        <div class="byline">{{BYLINE}}</div>
+      </div>
+    </div>
+    <div class="ov ov-top">
+      <div class="srch"><input type="search" id="q" placeholder="Find a river or a town" aria-label="Find a river or a town" autocomplete="off"><ul class="sug" id="sug" role="listbox"></ul></div>
+      <div class="chips"><button class="chip" data-mode="words" aria-pressed="true">Stream words</button><button class="chip" data-mode="roots" aria-pressed="false">Old roots</button><button class="chip lyr" id="lyrBtn" aria-expanded="false" aria-controls="lp">Layers</button></div>
+      <div class="chips" id="chipsWords">{{CHIPS_WORDS}}</div>
+      <div class="chips" id="chipsRoots" hidden>{{CHIPS_ROOTS}}</div>
+    </div>
+    <div class="lp" id="lp" role="dialog" aria-label="Map layers">
+      <h4>Layers</h4>
+      <h5>View</h5>
+      <label><input type="radio" name="view" value="words" checked> Word for the stream (burn, beck, brook...)</label>
+      <label><input type="radio" name="view" value="roots"> Old roots (Avon, Esk, Derwent...)</label>
+      <h5>Rivers</h5>
+      <label><input type="checkbox" id="ckWc" checked> Named rivers and streams</label>
+      <label><input type="checkbox" id="ckRp" checked> Courses of the old-root rivers</label>
+      <label><input type="checkbox" id="ckLab" checked> River names when zoomed in</label>
+      <h5>Map</h5>
+      <label><input type="checkbox" data-g="mountains" checked> Ink mountains and hills</label>
+      <label><input type="checkbox" data-g="forests" checked> Forests, marsh and moor</label>
+      <label><input type="checkbox" data-g="rivers" checked> Rivers and lakes</label>
+      <label><input type="checkbox" data-g="names" checked> Place names</label>
+      <label><input type="checkbox" data-g="roads"> Roads</label>
+      <label><input type="checkbox" data-g="borders" checked> Borders</label>
+      <label><input type="checkbox" data-g="hillshade" checked> Hill shading</label>
+      <label><input type="checkbox" data-g="tint" checked> Watercolour tints</label>
+      <label><input type="checkbox" id="modern"> Plain modern map (to see where you are)</label>
+    </div>
+    <div class="keys" id="key"></div>
+  </div>
+</div>
+
+<div class="wrap" id="essay">
+<p class="lede" style="margin-top:6px">Stand on the bridge at Stratford-upon-Avon and you are, in effect, standing above the River River. <i>Avon</i> is the Brittonic word for a river, the same as Welsh <i>afon</i>, and when English speakers arrived they took it for a name. They kept the names of most of England's big rivers in the same way, while renaming almost everything else. I took {{n.watercourses|int}} named rivers and streams from OpenStreetMap and mapped them by the words in their names: the old roots underneath, and the everyday words on top, burn, beck, brook, allt and nant, which change as you cross the old frontiers of language.</p>
+<p>Use the buttons to switch between the stream words and the old roots, and to pick a word or a root. Tap any dot to read the name.</p>
+<div class="byline">{{BYLINE}} · Waterways: OpenStreetMap · Base map: <a href="https://maps.tristanhotham.com/ink-map/">The Inked World</a></div>
+
+<div class="stats">
+<div class="stat"><b>{{major.pre|int}} of 60</b><span>of the biggest English rivers in the data have names older than English</span></div>
+<div class="stat"><b>{{towns.english_pc|pc}}</b><span>of England's towns end in an English or Norse word</span></div>
+<div class="stat"><b>{{avon_rivers|int}}</b><span>rivers and streams called Avon, {{avon_england|int}} in England and {{avon_scotland|int}} in Scotland</span></div>
+<div class="stat"><b>{{danelaw.east.beck_pc|pc}} v {{danelaw.west.beck_pc|pc}}</b><span>of streams are becks in Lincolnshire and Nottinghamshire, against Cheshire, Staffordshire, Shropshire and Greater Manchester</span></div>
+</div>
+
+<h2><span class="n">01 · Under the English</span>Rivers kept their names</h2>
+<p>England's place names are overwhelmingly English. Of {{towns.n|int}} towns and cities in England in OpenStreetMap, {{towns.english_pc|pc}} have a first word ending in a plain English or Norse element: <i>-ton</i>, <i>-ham</i>, <i>-ley</i>, <i>-bury</i>, <i>-ford</i>, <i>-by</i>, <i>-thorpe</i>, <i>-wick</i> and the like. The rivers that run through them are another matter. Of the 60 largest English rivers in the data, by the spread of their mapped course, {{major.pre|int}} have names that the place-name scholars trace to Brittonic or something older still: Thames, Trent, Severn, Avon, Ouse, Derwent, Exe, Tamar, Tees, Tyne. {{major.english|int}} have English names, and several of those are back-formations made centuries later from a town (the Arun from Arundel, the Rother from Rotherfield, the Mole from Molesey, the Lark from Lackford). The other {{major.uncertain|int}} are debated. Of the ten largest, {{major.top10_pre|int}} are pre-English.</p>
+<div class="figure"><img src="img/major.jpg" alt="Grid of the 60 largest English rivers, most coloured green for Brittonic or older names, some red for English names such as Mersey, Waveney and Cherwell, and some grey for uncertain" loading="lazy"><p class="src">The 60 largest English rivers in the data and the origin of their names, after Ekwall (1928) and Watts (2004).</p></div>
+<p>Often the newcomers named their towns after the river: Exeter on the Exe, Dartmouth and Dartington on the Dart, Alnwick on the Aln, Tynemouth, Doncaster on the Don, Thame, Frome and Usk. I found {{borrowed.n|int}} towns and villages within 6 km of {{borrowed.rivers|int}} old-named rivers that carry the river's name. (Sometimes it runs the other way: a few rivers were named from their towns, so treat any single case with care.)</p>
+
+<h2><span class="n">02 · How many Avons?</span>The oldest words</h2>
+<p>Some roots appear again and again. There are {{avon_rivers|int}} rivers and streams called Avon in the data: the Warwickshire Avon of Stratford, the Bristol Avon, the Hampshire Avon through Salisbury, the Devon Avon, and in Scotland the Avon of Speyside and the Avon of Falkirk among them. There are {{esk_rivers|int}} called Esk, from Eskdale in Cumbria to the North and South Esks of Angus, which share a root usually read as "water" with the Exe, the Axe and the Usk. {{derwent_rivers|int}} Derwents, Darwens and Darents (with the Dart, {{roots.derwent.rivers|int}}) are "rivers where oaks grow". There are {{calder_rivers|int}} Calders, "hard" or rocky waters, and Dees, Dons, Levens, Fromes and Colnes besides.</p>
+<div class="figure"><img src="img/avons.jpg" alt="Four maps showing the courses of rivers named Avon, Esk or Exe or Axe or Usk, Derwent or Dart, and Calder, scattered from Devon to the Highlands" loading="lazy"><p class="src">Four old river words. Each dot starts a mapped stretch of a river with that root.</p></div>
+<div class="figure"><img src="img/roots.jpg" alt="Map of Britain with the courses of {{root_rivers|int}} rivers whose names share an old root, coloured by root" loading="lazy"><p class="src">{{root_rivers|int}} rivers and streams in sixteen root groups, after Ekwall (1928).</p></div>
+
+<h2><span class="n">03 · The everyday words</span>Burn, beck and brook</h2>
+<p>The specific names are old; the words people put beside them are the ones they spoke. Of the named streams with a generic word, the commonest are burn ({{generic_counts.burn|int}}), allt ({{generic_counts.allt|int}}), brook ({{generic_counts.brook|int}}), beck ({{generic_counts.beck|int}}), gill ({{generic_counts.gill|int}}) and nant ({{generic_counts.nant|int}}). Mapped, they draw the old language frontiers. In Wales, {{wales.welsh_pc|pc}} of the streams named with <i>nant</i>, <i>afon</i>, <i>brook</i> or <i>river</i> are a <i>nant</i> or an <i>afon</i>. In Scotland, Gaelic <i>allt</i> and <i>abhainn</i> make up {{scotland.gaelic_pc_Highland|pc}} of the <i>allt</i>, <i>abhainn</i>, <i>burn</i> and <i>water</i> names in Highland and {{scotland.gaelic_pc_Na_h-Eileanan_Siar|pc}} in the Western Isles but none at all in the Borders or Dumfries and Galloway, where streams are burns, waters and sikes. (Galloway's Gaelic past shows in other ways, in stream names such as Polmaddy Burn from Gaelic <i>poll</i>.) In England, the Somerset Levels drain through rhynes ({{southern.rhyne_somerset|int}} of them) and the Fens through lodes.</p>
+<div class="figure"><img src="img/generics.jpg" alt="Map of Britain in 25 km squares coloured by the commonest word for a stream: Gaelic allt in the Highlands, burn in the Lowlands and Northumberland, beck in Cumbria, Yorkshire and Lincolnshire, brook in the Midlands and south, nant and afon in Wales" loading="lazy"><p class="src">The commonest word for a stream in each 25 km square.</p></div>
+
+<h2><span class="n">04 · The beck line</span>Where the Vikings settled</h2>
+<p><i>Beck</i> is the Old Norse <i>bekkr</i>, <i>brook</i> the Old English <i>brōc</i>. North of about {{beck_majority_from|f2}}°N most English streams are becks. But the line is not just a matter of latitude. Compare streams in Lincolnshire and Nottinghamshire with Cheshire, Staffordshire, Shropshire and Greater Manchester at much the same latitude: {{danelaw.east.beck_pc|pc}} of the eastern streams are becks ({{danelaw.east.beck|int}} becks to {{danelaw.east.brook|int}} brooks), against {{danelaw.west.beck_pc|pc}} in the west, where the map has not one beck among {{danelaw.west.brook|int}} brooks. Lincolnshire's streams are {{beck_county.Lincolnshire|pc}} becks, Norfolk's {{beck_county.Norfolk|pc}}. Yet Derbyshire and Leicestershire, which lay inside the Danelaw too, are brook country ({{danelaw.mid.beck|int}} becks to {{danelaw.mid.brook|int}} brooks), so the beck follows where Norse speakers settled thickly, not the political frontier.</p>
+<div class="figure"><img src="img/beck.jpg" alt="Chart of the share of beck against brook by latitude in England, rising steeply above 53.5 degrees north, and two bars: {{danelaw.east.beck_pc|pc}} becks in Lincolnshire and Nottinghamshire, none in the western counties" loading="lazy"><p class="src">Beck against brook by latitude (left) and in eastern and western counties at the same latitude (right).</p></div>
+
+<h2><span class="n">05 · How I did this</span>From ways to rivers</h2>
+<p><b>Rivers.</b> OpenStreetMap maps rivers as many short stretches. I took {{n.ways|int}} named stretches of river, stream and canal in the UK and joined stretches with the same name whose start points chain together (within 15 km for rivers, 4 km for streams) into {{n.watercourses|int}} named watercourses. For the rivers in the root groups I then checked every piece by eye and assigned it to its river by hand, because OpenStreetMap often splits one river (into a "stream" upper course, a Welsh name, or pieces with gaps) and sometimes two rivers of one name lie close together.</p>
+<p><b>Words.</b> Each name was split into a generic word (River, Afon, Allt, Burn of, before the name; Brook, Beck, Burn, Water, Gill, Sike, Dyke, Rhyne, Lode after it; and one-word names such as Holbeck) and the specific name. Roots are matched on the specific name with qualifiers such as Little or North removed, using sixteen root groups from Ekwall's <i>English River-Names</i> (1928), with Watts (2004) and Mills (2011); I removed false friends by hand (Kent Water and Kent Ditch are named after the county, not the Cumbrian Kent) and the decisions are in the data. The origins of the 60 largest English rivers are from the same works.</p>
+<p><b>What this cannot say.</b> River-name etymology is one of the most debated corners of place-name study, and I have used the standard readings without re-examining early spellings: meanings such as "dark" for Thames and Tame are disputed, and I mark them so. OpenStreetMap's coverage of small streams is uneven, and many small streams have no name in it. The size ranking uses the spread of mapped stretches, not true length, so a long river mapped in a few long stretches, such as the Eden in Cumbria, can fall out of the 60. The town comparison only reads the end of the first word. Treat single names as leads, and the patterns as the finding.</p>
+
+<details><summary>Sources and licences</summary>
+<ul class="plain">
+<li>Waterways and places: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL), queried with QLever (University of Freiburg). The derived tables are under the ODbL.</li>
+<li>River names: E. Ekwall, <i>English River-Names</i> (Oxford, 1928); V. Watts, <i>The Cambridge Dictionary of English Place-Names</i> (2004); A. D. Mills, <i>A Dictionary of British Place-Names</i> (2011); M. Gelling and A. Cole, <i>The Landscape of Place-Names</i> (2000); H. W. Owen and R. Morgan, <i>Dictionary of the Place-Names of Wales</i> (2007); W. J. Watson, <i>The History of the Celtic Place-Names of Scotland</i> (1926).</li>
+<li>Counties: ONS boundaries (Open Government Licence v3.0).</li>
+<li>Base map: The Inked World (MIT code), drawn live from OpenStreetMap vector tiles served by OpenFreeMap (ODbL). MapLibre GL JS 4.7.1 (BSD 3-Clause). Fonts: MedievalSharp and IM Fell (SIL Open Font License).</li>
+</ul></details>
+
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.24063209">Read the paper</a><a href="https://github.com/Tristan-Hotham/river-names">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/river-names/">Blog post</a></div>
+
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) Avon means river: the old roots and everyday words of British river names. Zenodo. <a href="https://doi.org/10.5281/zenodo.24063209">10.5281/zenodo.24063209</a></p>
+<p>Code: <a href="https://github.com/Tristan-Hotham/river-names">github.com/Tristan-Hotham/river-names</a> (MIT). Text and figures CC BY 4.0; the river tables are derived from OpenStreetMap (ODbL).</p>
+<p>{{AI}}</p>
+</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script>
+// The Inked World engine is shared with maps.tristanhotham.com/ink-map/ (same site): its scripts, data, fonts and worker
+// are read from there, so this repository stays small.
+window.INKBASE = new URL('../ink-map/', location.href).href;
+</script>
+<script src="js/page.js?v={{VERSION}}"></script>
+{{FULLSCREEN}}
+<script src="https://maps.tristanhotham.com/assets/site-nav.js" defer></script>
+</body>
+</html>
