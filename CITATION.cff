@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "Avon Means River: The Old Roots and Everyday Words of the River Names of the United Kingdom"
+type: dataset
+authors:
+  - family-names: Hotham
+    given-names: Tristan
+    orcid: "https://orcid.org/0000-0003-4931-9349"
+    affiliation: "Independent researcher"
+doi: "10.5281/zenodo.24063209"
+url: "https://maps.tristanhotham.com/river-names/"
+repository-code: "https://github.com/Tristan-Hotham/river-names"
+license: CC-BY-4.0
+keywords:
+  - "river names"
+  - "hydronymy"
+  - "toponymy"
+  - "Brittonic"
+  - "Old Norse"
+  - "Danelaw"
+  - "Gaelic"
+  - "Welsh"
+  - "OpenStreetMap"
